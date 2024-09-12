@@ -215,11 +215,12 @@ section span:hover {
 
 .menu-items {
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px ;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  width: 50%;
-  height: 50%;
-  grid-gap: 10px 10px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 10px 20px;
+  margin-left: 400px;
 }
 
 
@@ -318,7 +319,9 @@ section span:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  
 }
+
 
 .reserve h2{
   font-style: italic;
@@ -463,7 +466,3 @@ section h3{
   font-size: 30px;
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
