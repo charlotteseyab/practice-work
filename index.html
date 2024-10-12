@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pato Place</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+
 </head>
 
 <body>
@@ -94,7 +97,7 @@
     <div class="reserve">
       <h2 class="text-red">Reservation</h2>
       <h5>Book Table</h5>
-      <form>
+      <form class="form">
         <label for="date">Date</label>
         <input type="date" name="date" id="date" />
         <label for="name">Name</label>
@@ -110,7 +113,7 @@
         <input type="submit" value="BOOK TABLE" id="submit" class="text-white" /><br />
       </form>
     </div>
-    <div>
+    <div class="form">
       <img class="ambiance" src="./assests/img/img6.png" alt="ambiance" />
     </div>
   </section>
@@ -123,7 +126,7 @@
       similique illo animi reprehenderit ipsam vero.
     </p>
     <span>⭐⭐⭐⭐⭐ </span>
-    <h6>Charlotte Seyab - Accra, Ghana</h6>
+    <h6>Fred - Accra, Ghana</h6>
   </section>
   <section class="video">
     <h3 class="text-red">Discover</h3>
@@ -168,7 +171,7 @@
   <section class="foot">
     <h2>SPECIALS SIGN UP</h2>
     <label for="email"></label>
-    <input type="text" id="email" name="email" value="Email Address &#x2709;">
+    <input type="text" id="email" name="email" placeholder="Email Address &#x2709;">
     <input type="submit" value="Sign Up" id="submit" class="text-white">
   </section>
   <footer class="end">
@@ -188,15 +191,15 @@
     <div  class="foot2">
     <h4>LASTEST TWITTER</h4>
      <img src="./assests/symbols/twitter.png" alt="">
-     <p>Activello is a good option. It has a slider built into that <br> displays the featured image in the slider. <span class="text-red">https://buff.ly/2zaSfAQ</span> </p>
+     <p>Activello is a good option. It has a slider built into that <br> displays the featured image in the slider. <span class="text-red link">https://buff.ly/2zaSfAQ</span> </p>
      <h6>13 Sep 2024</h6>
      <img src="./assests/symbols/twitter.png" alt="">
-     <p>Activello is a good option. It has a slider built into that <br>displays <span class="text-red">https://buff.ly/2zaSfAQ</span></p>
+     <p>Activello is a good option. It has a slider built into that <br>displays <span class="text-red link">https://buff.ly/2zaSfAQ</span></p>
      <h6>13 Sep 2024</h6>
      </div>
      <div>
       <h2 class="foot-gallery">Gallery</h2>
-      <div  class="foot-img">
+      <div  class="foot-img" data-aos="flip-left">
       <img src="./assests/img/fm1.png" alt="">
       <img src="./assests/img/fm2.png" alt="">
       <img src="./assests/img/fm3.png" alt="">
@@ -212,6 +215,10 @@
       </div>
      </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
